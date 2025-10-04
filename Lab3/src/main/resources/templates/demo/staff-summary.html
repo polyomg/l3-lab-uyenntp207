@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3 - Thống kê Staff</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .kpi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:16px; margin:10px 0 28px; }
+        .kpi { background:#fff; border-radius:14px; padding:16px 18px 18px; box-shadow:0 4px 14px -4px rgba(0,0,0,.12); position:relative; overflow:hidden; }
+        .kpi:before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 85% 15%,rgba(39,60,117,.18),transparent 60%); }
+        .kpi h4 { margin:0 0 6px; font-size:13px; letter-spacing:.5px; font-weight:600; color:#607089; text-transform:uppercase; }
+        .kpi .val { font-size:22px; font-weight:700; color:#273c75; }
+        .kpi .sub { font-size:11px; color:#8395a7; margin-top:4px; }
+        .level-dist { display:flex; gap:10px; flex-wrap:wrap; }
+        .level-chip { background:#273c75; color:#fff; padding:8px 14px; border-radius:30px; font-size:13px; display:flex; gap:6px; align-items:center; box-shadow:0 2px 6px rgba(0,0,0,.18);}
+        .level-chip.level-0 { background:#00a8ff; }
+        .level-chip.level-1 { background:#9c88ff; }
+        .level-chip.level-2 { background:#e84118; }
+        .summary-table { width:100%; border-collapse:collapse; background:#fff; box-shadow:0 4px 16px -4px rgba(0,0,0,.1); border-radius:14px; overflow:hidden; }
+        .summary-table th, .summary-table td { padding:10px 12px; font-size:14px; }
+        .summary-table thead { background:#273c75; color:#fff; }
+        .summary-table tbody tr:nth-child(even) { background:#f5f8fc; }
+    </style>
+</head>
+<body>
+<div th:replace="demo/fragments/layout :: headerFragment('summary')"></div>
+<div class="main-container">
+    <div class="card">
+        <h2 class="section-title">Bài 3 - Thống kê danh sách Staff</h2>
+        <p class="subtitle">Tính toán số liệu tổng hợp dựa trên danh sách Staff (size, lương trung bình, min/max, giới tính, cấp bậc).</p>
+        <div class="kpi-grid">
+            <div class="kpi">
+                <h4>Tổng số</h4>
+                <div class="val" th:text="${total}"></div>
+                <div class="sub">Nhân sự</div>
+            </div>
+            <div class="kpi">
+                <h4>Nam</h4>
+                <div class="val" th:text="${maleCount}"></div>
+                <div class="sub">Giới tính Nam</div>
+            </div>
+            <div class="kpi">
+                <h4>Nữ</h4>
+                <div class="val" th:text="${femaleCount}"></div>
+                <div class="sub">Giới tính Nữ</div>
+            </div>
+            <div class="kpi">
+                <h4>Lương TB</h4>
+                <div class="val" th:text="${#numbers.formatDecimal(avgSalary,0,'COMMA',2,'POINT')}"></div>
+                <div class="sub">Đã chuẩn hoá</div>
+            </div>
+            <div class="kpi">
+                <h4>Lương thấp nhất</h4>
+                <div class="val" th:text="${#numbers.formatDecimal(minSalary,0,'COMMA',2,'POINT')}"></div>
+                <div class="sub">Min</div>
+            </div>
+            <div class="kpi">
+                <h4>Lương cao nhất</h4>
+                <div class="val" th:text="${#numbers.formatDecimal(maxSalary,0,'COMMA',2,'POINT')}"></div>
+                <div class="sub">Max</div>
+            </div>
+        </div>
+        <h3 style="margin:0 0 10px">Phân bố cấp bậc</h3>
+        <div class="level-dist mt-2">
+            <div class="level-chip level-0">Úy <span th:text="${byLevel[0] ?: 0}"></span></div>
+            <div class="level-chip level-1">Tá <span th:text="${byLevel[1] ?: 0}"></span></div>
+            <div class="level-chip level-2">Tướng <span th:text="${byLevel[2] ?: 0}"></span></div>
+        </div>
+        <h3 class="mt-4" style="margin-bottom:10px">Danh sách chi tiết</h3>
+        <table class="summary-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Ảnh</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Cấp</th>
+                <th>Lương</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="s, st : ${list}">
+                <td th:text="${st.count}"></td>
+                <td><img th:src="@{|/photo/${s.photo}|}" style="width:40px;height:40px;border-radius:50%;border:2px solid #273c75;object-fit:cover"/></td>
+                <td th:text="${#strings.capitalizeWords(s.fullname)}"></td>
+                <td th:text="${s.id}"></td>
+                <td>
+                    <th:block th:switch="${s.level}">
+                        <span class="badge level-badge-0" th:case="0">Úy</span>
+                        <span class="badge level-badge-1" th:case="1">Tá</span>
+                        <span class="badge level-badge-2" th:case="2">Tướng</span>
+                        <span class="badge" th:case="*">?</span>
+                    </th:block>
+                </td>
+                <td style="color:#27ae60;font-weight:600" th:text="${#numbers.formatDecimal(s.salary,0,'COMMA',2,'POINT')}"></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="mt-4">
+            <a class="button" href="/staff/list">Bài 2</a>
+            <a class="button secondary" href="/staff/detail">Bài 1</a>
+            <a class="button" href="/demo/index">Index</a>
+        </div>
+    </div>
+</div>
+<div th:replace="demo/fragments/layout :: footerFragment"></div>
+</body>
+</html>
+
