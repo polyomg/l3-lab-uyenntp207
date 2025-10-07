@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả kiểm tra dữ liệu</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+        .success { color: green; font-weight: bold; }
+        .error { color: red; font-weight: bold; }
+        .info { background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 15px 0; }
+        .staff-info { background: #e8f5e8; padding: 15px; border-radius: 5px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <h2>Kết quả kiểm tra dữ liệu</h2>
+
+    <div th:if="${message}" th:class="${#strings.contains(message, 'đúng')} ? 'success' : 'error'">
+        <p th:text="${message}"></p>
+    </div>
+
+    <div class="staff-info" th:if="${staff}">
+        <h3>Thông tin nhân viên đã nhập:</h3>
+        <p><strong>Email:</strong> <span th:text="${staff.id}"></span></p>
+        <p><strong>Họ tên:</strong> <span th:text="${staff.fullname}"></span></p>
+        <p><strong>Giới tính:</strong> <span th:text="${staff.gender ? 'Nam' : 'Nữ'}"></span></p>
+        <p><strong>Ngày sinh:</strong> <span th:text="${#dates.format(staff.birthday, 'dd/MM/yyyy')}"></span></p>
+        <p><strong>Ảnh:</strong> <span th:text="${staff.photo}"></span></p>
+        <p><strong>Cấp bậc:</strong> <span th:text="${staff.level == 0 ? 'Úy' : (staff.level == 1 ? 'Tá' : 'Tướng')}"></span></p>
+        <p><strong>Lương:</strong> <span th:text="${#numbers.formatDecimal(staff.salary, 0, 2)}"></span></p>
+    </div>
+
+    <p>
+        <a href="/staff/create/form">← Quay lại form</a> |
+        <a href="/">Trang chủ</a>
+    </p>
+</body>
+</html>
+

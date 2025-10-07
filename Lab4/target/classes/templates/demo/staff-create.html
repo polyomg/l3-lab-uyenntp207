@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập thông tin nhân viên</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+        input, select { padding: 8px; margin: 5px 0; width: 200px; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        i { color: red; font-style: italic; }
+        hr { margin: 10px 0; }
+        .message { font-weight: bold; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <h2>Bài 1 & 2: Databinding và Form Validation</h2>
+
+    <div class="message">
+        <i th:text="${message}"></i>
+    </div>
+
+    <form th:object="${staff}" action="/staff/create/save" method="post" enctype="multipart/form-data">
+        Email: <input th:field="*{id}">
+        <i th:errors="*{id}"></i><hr>
+
+        Họ và tên: <input th:field="*{fullname}">
+        <i th:errors="*{fullname}"></i><hr>
+
+        Giới tính:
+        <input type="radio" th:field="*{gender}" value="true">Nam
+        <input type="radio" th:field="*{gender}" value="false">Nữ
+        <i th:errors="*{gender}"></i><hr>
+
+        Ngày sinh: <input name="birthday" th:value="*{#dates.format(birthday, 'MM/dd/yyyy')}">
+        <i th:errors="*{birthday}"></i><hr>
+
+        Hình ảnh:
+        <input th:field="*{photo}" type="hidden">
+        <input name="photo_file" type="file"><hr>
+
+        Cấp bậc:
+        <select th:field="*{level}">
+            <option value="0">Úy</option>
+            <option value="1">Tá</option>
+            <option value="2">Tướng</option>
+        </select><hr>
+
+        Salary: <input th:field="*{salary}">
+        <i th:errors="*{salary}"></i><hr>
+
+        <button>Create</button>
+    </form>
+
+    <p><a href="/">← Quay lại trang chủ</a></p>
+</body>
+</html>
+
