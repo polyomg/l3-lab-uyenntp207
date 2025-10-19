@@ -1,4 +1,8 @@
 package com.poly.lab6.dao;
 
-public class ProductDao {
+import com.poly.lab6.entity.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductDao extends JpaRepository<Product, Integer> {
 }
+

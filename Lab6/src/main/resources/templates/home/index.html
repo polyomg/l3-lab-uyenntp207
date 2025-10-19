@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 - JPAREPOSITORY</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f5f7fa;
+        }
+        .card {
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="container mt-5">
+
+<h2 class="text-center mb-4">🧭 LAB 6 - DANH SÁCH CHỨC NĂNG</h2>
+
+<div class="row g-4 justify-content-center">
+
+    <!-- Bài 1 -->
+    <div class="col-md-4">
+        <div class="card text-center border-primary">
+            <div class="card-body">
+                <h5 class="card-title text-primary">Bài 1</h5>
+                <p class="card-text">Tạo Entity và DAO ánh xạ CSDL</p>
+                <a href="/product/ProductHome" class="btn btn-outline-primary">Xem ví dụ</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bài 2 -->
+    <div class="col-md-4">
+        <div class="card text-center border-success">
+            <div class="card-body">
+                <h5 class="card-title text-success">Bài 2</h5>
+                <p class="card-text">CRUD Loại sản phẩm (Category)</p>
+                <a href="/category/CategoryHome" class="btn btn-outline-success">Đi tới bài 2</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bài 3.1 -->
+    <div class="col-md-4">
+        <div class="card text-center border-warning">
+            <div class="card-body">
+                <h5 class="card-title text-warning">Bài 3.1</h5>
+                <p class="card-text">CRUD Sản phẩm (Product)</p>
+                <a href="/product/ProductHome" class="btn btn-outline-warning">Đi tới bài 3.1</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bài 3.2 -->
+    <div class="col-md-4">
+        <div class="card text-center border-danger">
+            <div class="card-body">
+                <h5 class="card-title text-danger">Bài 3.2</h5>
+                <p class="card-text">Sắp xếp sản phẩm giảm dần theo cột</p>
+                <a href="/product/sort" class="btn btn-outline-danger">Đi tới bài 3.2</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bài 4 -->
+    <div class="col-md-4">
+        <div class="card text-center border-info">
+            <div class="card-body">
+                <h5 class="card-title text-info">Bài 4</h5>
+                <p class="card-text">Phân trang sản phẩm (mỗi trang 5 sản phẩm)</p>
+                <a href="/product/page" class="btn btn-outline-info">Đi tới bài 4</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bài 5 -->
+    <div class="col-md-4">
+        <div class="card text-center border-dark">
+            <div class="card-body">
+                <h5 class="card-title text-dark">Bài 5</h5>
+                <p class="card-text">Phân trang + Sắp xếp sản phẩm</p>
+                <a href="/product/page-sort" class="btn btn-outline-dark">Đi tới bài 5</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

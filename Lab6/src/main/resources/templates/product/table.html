@@ -1,0 +1,33 @@
+<div th:fragment="table">
+    <table class="table table-bordered table-hover align-middle">
+        <thead class="table-primary text-center">
+        <tr>
+            <th>ID</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Danh mục</th>
+            <th>Trạng thái</th>
+            <th>Ảnh</th>
+            <th>Hành động</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p : ${items}">
+            <td th:text="${p.id}"></td>
+            <td th:text="${p.name}"></td>
+            <td th:text="${#numbers.formatDecimal(p.price * 1000, 0, 'COMMA', 0, 'POINT')} + ' đ'"></td>
+            <td th:text="${p.category.name}"></td>
+            <td>
+                <span th:text="${p.available ? 'Còn hàng' : 'Hết hàng'}"
+                      th:classappend="${p.available ? 'text-success' : 'text-danger'}"></span>
+            </td>
+            <td><img th:src="${p.image}" style="height:50px;width:50px;object-fit:cover;"></td>
+            <td class="text-center">
+                <a th:href="@{'/product/edit/' + ${p.id}}" class="btn btn-warning btn-sm">Sửa</a>
+                <a th:href="@{'/product/delete/' + ${p.id}}" class="btn btn-danger btn-sm"
+                   onclick="return confirm('Xóa sản phẩm này?')">Xóa</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
