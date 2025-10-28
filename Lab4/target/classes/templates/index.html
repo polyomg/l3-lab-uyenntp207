@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>LAB4 - THYMELEAF 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-radius: 15px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .lab-section {
+            background: #f8f9fa;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #007bff;
+            transition: transform 0.3s ease;
+        }
+        .lab-section:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .lab-title {
+            color: #007bff;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .lab-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .lab-link {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        .lab-link:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+        .description {
+            color: #666;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .lang-switch {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .lang-switch a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .objectives {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .objectives h3 {
+            color: #1976d2;
+            margin-top: 0;
+        }
+        .objectives ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .objectives li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .objectives li:before {
+            content: "✓";
+            color: #4caf50;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 LAB4: THYMELEAF 2</h1>
+
+        <div class="objectives">
+            <h3>📋 MỤC TIÊU LAB4:</h3>
+            <ul>
+                <li>Thực hiện 2 way data binding</li>
+                <li>Thực hiện form validation</li>
+                <li>Tổ chức layout</li>
+                <li>Tổ chức website đa ngôn ngữ</li>
+            </ul>
+        </div>
+
+        <div class="lang-switch">
+            <a href="?lang=vi">🇻🇳 Tiếng Việt</a> |
+            <a href="?lang=en">🇺🇸 English</a>
+        </div>
+
+        <div class="lab-section">
+            <div class="lab-title">📝 Bài 1: Databinding (2 điểm)</div>
+            <div class="description">
+                Xây dựng trang web thực hiện ràng buộc dữ liệu 2 chiều giữa bean và form
+            </div>
+            <div class="lab-links">
+                <a href="/staff/create/form" class="lab-link">📋 Form Nhập Thông Tin Nhân Viên</a>
+            </div>
+        </div>
+
+        <div class="lab-section">
+            <div class="lab-title">🔍 Bài 2: Form Validation (2 điểm)</div>
+            <div class="description">
+                Thực hiện kiểm tra dữ liệu nhập vào form với backend validation
+            </div>
+            <div class="lab-links">
+                <a href="/staff/create/form" class="lab-link">✅ Test Form Validation</a>
+            </div>
+        </div>
+
+        <div class="lab-section">
+            <div class="lab-title">🏗️ Bài 4: Layout (2 điểm)</div>
+            <div class="description">
+                Website với bố cục giao diện gồm header, menu, content và footer
+            </div>
+            <div class="lab-links">
+                <a href="/home/index" class="lab-link">🏠 Trang Chủ</a>
+                <a href="/home/about" class="lab-link">ℹ️ Giới Thiệu</a>
+            </div>
+        </div>
+
+        <div class="lab-section">
+            <div class="lab-title">🌐 Bài 5: Đa Ngôn Ngữ (2 điểm)</div>
+            <div class="description">
+                Chuyển đổi website thành đa ngôn ngữ (Tiếng Việt & English)
+            </div>
+            <div class="lab-links">
+                <a href="/home/index?lang=vi" class="lab-link">🇻🇳 Tiếng Việt</a>
+                <a href="/home/index?lang=en" class="lab-link">🇺🇸 English</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; color: #666;">
+            <p><strong>📚 LAB4: THYMELEAF 2 - Hoàn thành đầy đủ theo yêu cầu</strong></p>
+            <p><em>Sử dụng file lab4.sh để tự động chạy ứng dụng</em></p>
+        </div>
+    </div>
+</body>
+</html>

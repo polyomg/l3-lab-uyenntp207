@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4 - Trạng thái vòng lặp</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div th:replace="demo/fragments/layout :: headerFragment('status')"></div>
+<div class="main-container">
+    <div class="card">
+        <h2 class="section-title">Bài 4 - Trạng thái phần tử trong vòng lặp</h2>
+        <p class="subtitle">Minh họa các thuộc tính: index, count, first, last, odd, even trong Thymeleaf với định dạng màu sắc.</p>
+        <div class="table-wrapper">
+            <table class="table-status">
+                <thead>
+                <tr>
+                    <th rowspan="2">HỌ VÀ TÊN</th>
+                    <th colspan="6">CÁC THUỘC TÍNH TRẠNG THÁI</th>
+                </tr>
+                <tr>
+                    <th>Index</th>
+                    <th>Count</th>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Odd</th>
+                    <th>Even</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="staff, st : ${list}" th:classappend="${st.odd} ? ' status-pink' : ' status-cyan'">
+                    <td th:text="${#strings.capitalizeWords(staff.fullname)}"></td>
+                    <td th:text="${st.index}"></td>
+                    <td th:text="${st.count}"></td>
+                    <td th:text="${st.first}"></td>
+                    <td th:text="${st.last}"></td>
+                    <td th:text="${st.odd}"></td>
+                    <td th:text="${st.even}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-4">
+            <a class="button" href="/staff/list">Bài 2</a>
+            <a class="button secondary" href="/staff/list-controls">Bài 5</a>
+            <a class="button" href="/demo/index">Index</a>
+        </div>
+    </div>
+</div>
+<div th:replace="demo/fragments/layout :: footerFragment"></div>
+</body>
+</html>

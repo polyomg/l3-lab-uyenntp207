@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<div class="auth-box">
+    <h2>Đăng ký</h2>
+    <form action="/account/register" method="post" enctype="multipart/form-data">
+        <label>User</label>
+        <input name="username" required />
+        <label>Password</label>
+        <input type="password" name="password" required />
+        <label>Ảnh đại diện</label>
+        <input type="file" name="photo" accept="image/*" />
+        <button class="btn full">Register</button>
+    </form>
+    <div class="links">
+        <a href="/account/login">Đăng nhập</a> | <a href="/">Home</a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm & phân trang (DSL)</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fafafa; color: #222; }
+        .main { max-width: 500px; margin: 30px auto; background: #fff; border: 1px solid #eee; border-radius: 6px; padding: 20px; }
+        h3 { text-align: center; font-size: 1.1em; }
+        form { margin-bottom: 18px; text-align: center; }
+        input { padding: 6px; width: 180px; border: 1px solid #ccc; border-radius: 3px; }
+        button { padding: 6px 16px; border: none; background: #222; color: #fff; border-radius: 3px; cursor: pointer; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #eee; padding: 6px; text-align: left; font-size: 0.97em; }
+        th { background: #f0f0f0; }
+        .pagination { text-align: center; margin-top: 10px; }
+        .pagination a { margin: 0 4px; color: #222; text-decoration: none; }
+        .pagination a.active { font-weight: bold; }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h3>Tìm & phân trang (DSL)</h3>
+    <form action="/product/search-and-page-dsl" method="post">
+        <input name="keywords" th:value="${session.keywords}" placeholder="Từ khóa tìm kiếm...">
+        <button>Tìm</button>
+    </form>
+    <table>
+        <tr><th>ID</th><th>Tên</th><th>Giá</th></tr>
+        <tr th:each="item : ${page.content}">
+            <td th:text="${item.id}"></td>
+            <td th:text="${item.name}"></td>
+            <td th:text="${item.price}"></td>
+        </tr>
+    </table>
+    <div class="pagination">
+        <a th:href="@{/product/search-and-page-dsl(p=0)}">Đầu</a>
+        <a th:href="@{/product/search-and-page-dsl(p=${page.number - 1})}" th:if="${page.number > 0}">Trước</a>
+        <a th:href="@{/product/search-and-page-dsl(p=${page.number + 1})}" th:if="${page.number < page.totalPages - 1}">Sau</a>
+        <a th:href="@{/product/search-and-page-dsl(p=${page.totalPages - 1})}">Cuối</a>
+    </div>
+</div>
+</body>
+</html>

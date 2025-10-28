@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab5 - Spring Beans Portal</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-container">
+        <div class="header-left">
+            <h1><i class="fas fa-leaf"></i> Lab 5 - Spring Beans</h1>
+            <p class="subtitle">Quản lý Bean, Session, Cookie &amp; Shopping Cart</p>
+        </div>
+        <nav class="header-nav">
+            <a href="/" class="nav-item"><i class="fas fa-home"></i> Home</a>
+            <th:block th:if="${session.username} == null">
+                <a href="/account/login" class="nav-item"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="/account/register" class="nav-item"><i class="fas fa-user-plus"></i> Register</a>
+            </th:block>
+            <th:block th:if="${session.username != null}">
+                <span class="user-info">
+                    <i class="fas fa-user"></i> Xin chào, <strong th:text="${session.username}"></strong>
+                    <a href="/account/logout" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </span>
+            </th:block>
+            <a href="/item/index" class="nav-item"><i class="fas fa-box"></i> Products</a>
+            <a href="/cart/view" class="nav-item cart-link">
+                <i class="fas fa-shopping-cart"></i> Cart
+                <span class="cart-badge" th:text="${cartCount}">0</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<main class="main-content">
+    <div class="hero-section">
+        <h2>Chào mừng đến với Lab 5</h2>
+        <p>Khám phá các tính năng Spring Beans, IoC, Session Management và Shopping Cart</p>
+    </div>
+
+    <div class="feature-grid">
+        <div class="feature-card login-card">
+            <div class="card-icon">
+                <i class="fas fa-sign-in-alt"></i>
+            </div>
+            <h3>Đăng nhập</h3>
+            <p>Thử nghiệm với tài khoản: <strong>poly / 123</strong></p>
+            <p class="card-description">Cookie, Session & Remember Me</p>
+            <a class="btn btn-primary" href="/account/login">
+                <i class="fas fa-arrow-right"></i> Truy cập
+            </a>
+        </div>
+
+        <div class="feature-card register-card">
+            <div class="card-icon">
+                <i class="fas fa-user-plus"></i>
+            </div>
+            <h3>Đăng ký</h3>
+            <p>Upload hình đại diện & ParamService</p>
+            <p class="card-description">File Upload với Spring</p>
+            <a class="btn btn-secondary" href="/account/register">
+                <i class="fas fa-arrow-right"></i> Đăng ký
+            </a>
+        </div>
+
+        <div class="feature-card products-card">
+            <div class="card-icon">
+                <i class="fas fa-box-open"></i>
+            </div>
+            <h3>Sản phẩm</h3>
+            <p>Danh sách sản phẩm demo với DB Utils</p>
+            <p class="card-description">ItemController & Thymeleaf</p>
+            <a class="btn btn-success" href="/item/index">
+                <i class="fas fa-arrow-right"></i> Xem shop
+            </a>
+        </div>
+
+        <div class="feature-card cart-card">
+            <div class="card-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>Giỏ hàng</h3>
+            <p>Shopping Cart với @SessionScope</p>
+            <p class="card-description">Bean Lifecycle Management</p>
+            <a class="btn btn-warning" href="/cart/view">
+                <i class="fas fa-arrow-right"></i> Xem giỏ hàng
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p><i class="fas fa-copyright"></i> 2025 Lab 5 Spring Beans Demo - Developed with <i class="fas fa-heart text-red"></i></p>
+</footer>
+</body>
+</html>
