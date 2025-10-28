@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab3 - Index</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div th:replace="demo/fragments/layout :: headerFragment('index')"></div>
+<div class="main-container">
+    <div class="card">
+        <h2 class="section-title">Danh mục bài thực hành</h2>
+        <p class="subtitle">Chọn một bài bên dưới để xem nội dung yêu cầu và phần minh họa Thymeleaf.</p>
+        <div class="grid-2">
+            <div class="card" style="padding:18px 20px; margin:0;">
+                <h3 style="margin:0 0 10px">Bài 1 - Staff Detail</h3>
+                <p style="margin:0 0 14px; font-size:14px">Hiển thị thông tin chi tiết của một Staff với định dạng ngày, số, switch-case.</p>
+                <a class="button" href="/staff/detail">Xem Bài 1</a>
+            </div>
+            <div class="card" style="padding:18px 20px; margin:0;">
+                <h3 style="margin:0 0 10px">Bài 2 - Staff List</h3>
+                <p style="margin:0 0 14px; font-size:14px">Danh sách nhiều Staff: ảnh đại diện, số thứ tự, tên, lương và phân cách hàng.</p>
+                <a class="button" href="/staff/list">Xem Bài 2</a>
+            </div>
+            <div class="card" style="padding:18px 20px; margin:0;">
+                <h3 style="margin:0 0 10px">Bài 3 - Summary</h3>
+                <p style="margin:0 0 14px; font-size:14px">Thống kê: tổng số, giới tính, lương TB / min / max, phân bố cấp bậc.</p>
+                <a class="button" href="/staff/summary">Xem Bài 3</a>
+            </div>
+            <div class="card" style="padding:18px 20px; margin:0;">
+                <h3 style="margin:0 0 10px">Bài 4 - List Status</h3>
+                <p style="margin:0 0 14px; font-size:14px">Minh họa trạng thái lặp (index, count, first, last, odd, even) với màu nền.</p>
+                <a class="button" href="/staff/list-status">Xem Bài 4</a>
+            </div>
+            <div class="card" style="padding:18px 20px; margin:0;">
+                <h3 style="margin:0 0 10px">Bài 5 - Controls</h3>
+                <p style="margin:0 0 14px; font-size:14px">Đổ dữ liệu vào Select Box và Radio Group từ List&lt;Staff&gt;.</p>
+                <a class="button" href="/staff/list-controls">Xem Bài 5</a>
+            </div>
+        </div>
+        <div class="mt-4">
+            <span class="badge">Thymeleaf • Expressions • Iteration • Formatting • Aggregation</span>
+        </div>
+    </div>
+</div>
+<div th:replace="demo/fragments/layout :: footerFragment"></div>
+</body>
+</html>

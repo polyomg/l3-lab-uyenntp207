@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5 - List Controls</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div th:replace="demo/fragments/layout :: headerFragment('controls')"></div>
+<div class="main-container">
+    <div class="card">
+        <h2 class="section-title">Bài 5 - Đổ dữ liệu vào Select & Radio Group</h2>
+        <p class="subtitle">Minh họa lấy List&lt;Staff&gt; từ Model và render vào các control lựa chọn.</p>
+        <div class="controls-box">
+            <h3>Fill to Select Box</h3>
+            <select name="cbo">
+                <th:block th:each="staff : ${list}">
+                    <option th:value="${staff.id}" th:text="${#strings.capitalizeWords(staff.fullname)}"></option>
+                </th:block>
+            </select>
+            <h3 class="mt-4">Create Radio Button Group</h3>
+            <div class="radio-group">
+                <th:block th:each="staff : ${list}">
+                    <label>
+                        <input type="radio" name="rdo" th:value="${staff.id}">
+                        <span th:text="${#strings.capitalizeWords(staff.fullname)}"></span>
+                    </label>
+                </th:block>
+            </div>
+        </div>
+        <div class="mt-4">
+            <a class="button" href="/staff/list">Bài 2</a>
+            <a class="button secondary" href="/staff/list-status">Bài 4</a>
+            <a class="button" href="/demo/index">Index</a>
+        </div>
+    </div>
+</div>
+<div th:replace="demo/fragments/layout :: footerFragment"></div>
+</body>
+</html>

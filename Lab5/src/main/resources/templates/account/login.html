@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<div class="auth-box">
+    <h2>Đăng nhập</h2>
+    <div th:if="${error}" class="alert error" th:text="${error}"></div>
+    <form action="/account/login" method="post">
+        <label>User</label>
+        <input name="username" th:value="${rememberedUser}" required />
+        <label>Password</label>
+        <input type="password" name="password" required />
+        <label class="check"><input type="checkbox" name="remember" value="true"/> Remember me</label>
+        <button class="btn full">Login</button>
+    </form>
+    <div class="links">
+        <a href="/account/register">Đăng ký</a> | <a href="/">Home</a>
+        <span th:if="${session.username != null}"> | <a href="/account/logout">Logout</a></span>
+    </div>
+</div>
+</body>
+</html>

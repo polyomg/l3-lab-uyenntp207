@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="42b6c32b-1865-475d-a97d-d81a8ec78f4b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Document/update" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/Document/Lab1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/README-Lab1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/src/main/java/com/poly/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/src/main/java/com/poly/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/src/main/java/com/poly/controller/RectangleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/src/main/java/com/poly/lab1/Lab1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/src/main/resources/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/src/main/resources/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/src/main/resources/templates/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/src/main/resources/templates/rectangle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1/src/test/java/com/poly/lab1/Lab1ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/Document/Lab2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/java/com/poly/lab2/Lab2Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/java/com/poly/lab2/controller/IndexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/java/com/poly/lab2/controller/OkController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/java/com/poly/lab2/controller/ParamController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/java/com/poly/lab2/controller/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/java/com/poly/lab2/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/java/com/poly/lab2/controller/ResultController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/resources/a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/resources/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/resources/ok.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/main/resources/product/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab2/src/test/java/com/poly/lab2/Lab2ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/Document/Lab3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/java/com/poly/lab3/Lab3Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/java/com/poly/lab3/bean/Staff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/java/com/poly/lab3/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/java/com/poly/lab3/controller/StaffController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/resources/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/resources/static/photo/cuuNon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/resources/templates/demo/fragments/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/resources/templates/demo/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/resources/templates/demo/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/resources/templates/demo/list-controls.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/resources/templates/demo/list-status.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/resources/templates/demo/staff-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/resources/templates/demo/staff-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/main/resources/templates/demo/staff-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab3/src/test/java/com/poly/lab3/Lab3ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/java/com/poly/Lab4Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/java/com/poly/bean/Staff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/java/com/poly/config/MessageConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/java/com/poly/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/java/com/poly/controller/StaffController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/resources/i18n/layout.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/resources/i18n/layout_vi.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/resources/templates/demo/staff-create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/resources/templates/demo/staff-validate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/resources/templates/home/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/resources/templates/home/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/resources/templates/shared/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/src/main/resources/templates/shared/menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/com/poly/Lab4Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/com/poly/bean/Staff$StaffBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/com/poly/bean/Staff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/com/poly/config/MessageConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/com/poly/controller/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/com/poly/controller/StaffController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/i18n/layout.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/i18n/layout_vi.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/templates/demo/staff-create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/templates/demo/staff-validate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/templates/home/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/templates/home/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/templates/shared/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab4/target/classes/templates/shared/menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/Document/Lab5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/lab5.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/Lab5Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/controller/AccountController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/controller/GlobalModelAttributes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/controller/ItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/controller/ShoppingCartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/model/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/service/CookieService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/service/ParamService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/service/SessionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/service/ShoppingCartService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/service/ShoppingCartServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/java/com/poly/lab5/util/DB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/resources/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/resources/templates/account/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/resources/templates/account/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/resources/templates/cart/view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/main/resources/templates/item/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab5/src/test/java/com/poly/lab5/Lab5ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/Document/J5Shop.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/Document/Lab6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/Lab6Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/controller/CategoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/dao/AccountDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/dao/CategoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/dao/OrderDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/dao/OrderDetailDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/dao/ProductDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/entity/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/entity/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/entity/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/entity/OrderDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/java/com/poly/lab6/entity/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/resources/templates/category/CategoryHome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/resources/templates/category/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/resources/templates/category/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/resources/templates/home/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/resources/templates/product/ProductHome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/resources/templates/product/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/resources/templates/product/page-sort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/resources/templates/product/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/resources/templates/product/sort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/main/resources/templates/product/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab6/src/test/java/com/poly/lab6/Lab6ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab7/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab7/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab7/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab7/Document/Lab7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab7/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab7/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab7/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab7/src/main/java/com/poly/lab7/Lab7Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab7/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab7/src/test/java/com/poly/lab7/Lab7ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab8/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab8/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab8/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab8/Document/Lab8.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab8/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab8/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab8/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab8/src/main/java/com/poly/lab8/Lab8Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab8/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab8/src/test/java/com/poly/lab8/Lab8ApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Lab1/src/main/resources/templates/hello.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="33aJeVIfLMbEM0FiJeuMbwjyRIK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Lab1Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Lab3Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Lab4Application (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Lab4Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Lab5Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Lab6Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Lab7Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAVA5/l3-lab-uyenntp207&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA5\l3-lab-uyenntp207\Lab4\src\main\java\com\poly\controller" />
+      <recent name="D:\JAVA5\l3-lab-uyenntp207\Lab4\src\main\resources\static\photo" />
+      <recent name="D:\JAVA5\LAB1234\l3-lab-uyenntp207\Lab1\src\main\resources\template" />
+      <recent name="D:\JAVA5\LAB1234\l3-lab-uyenntp207\Lab1\src\main\java\com\poly\controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA5\l3-lab-uyenntp207\Lab4\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="Lab1Application" value="STOPPED" />
+              <entry key="Lab3Application" value="STOPPED" />
+              <entry key="Lab4Application" value="STOPPED" />
+              <entry key="Lab5Application" value="STOPPED" />
+              <entry key="Lab6Application" value="STOPPED" />
+              <entry key="Lab7Application" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Lab7Application">
+    <configuration name="Lab1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Lab1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.poly.lab1.Lab1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Lab2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.poly.lab2.Lab2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab3Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Lab3" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.poly.lab3.Lab3Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab4Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Lab4" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.poly.Lab4Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.poly.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab5Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Lab5" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.poly.lab5.Lab5Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab6Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Lab6" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.poly.lab6.Lab6Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab7Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Lab7" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.poly.lab7.Lab7Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab8Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Lab8" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.poly.lab8.Lab8Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Lab4Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42b6c32b-1865-475d-a97d-d81a8ec78f4b" name="Changes" comment="" />
+      <created>1759549345088</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759549345088</updated>
+      <workItem from="1759549346300" duration="5414000" />
+      <workItem from="1759556161408" duration="126000" />
+      <workItem from="1759556304519" duration="108000" />
+      <workItem from="1759556426901" duration="288000" />
+      <workItem from="1759557599613" duration="29000" />
+      <workItem from="1759557641804" duration="415000" />
+      <workItem from="1759558089777" duration="617000" />
+      <workItem from="1759558740996" duration="282000" />
+      <workItem from="1759559038392" duration="538000" />
+      <workItem from="1759559594567" duration="328000" />
+      <workItem from="1759559965844" duration="1397000" />
+      <workItem from="1759721116067" duration="30000" />
+      <workItem from="1759721345386" duration="3164000" />
+      <workItem from="1759763808137" duration="23419000" />
+      <workItem from="1759936957153" duration="1231000" />
+      <workItem from="1760153595009" duration="4366000" />
+      <workItem from="1760421509149" duration="1847000" />
+      <workItem from="1760542779383" duration="16445000" />
+      <workItem from="1760764728534" duration="4402000" />
+      <workItem from="1760769187161" duration="1222000" />
+      <workItem from="1760866139582" duration="8949000" />
+      <workItem from="1760972454639" duration="4688000" />
+      <workItem from="1761025263126" duration="4926000" />
+      <workItem from="1761622513495" duration="5612000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

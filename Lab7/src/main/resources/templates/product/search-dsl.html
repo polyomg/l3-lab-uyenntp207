@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm sản phẩm (DSL)</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fafafa; color: #222; }
+        .main { max-width: 420px; margin: 30px auto; background: #fff; border: 1px solid #eee; border-radius: 6px; padding: 20px; }
+        h3 { text-align: center; font-size: 1.1em; }
+        form { margin-bottom: 18px; text-align: center; }
+        input { padding: 6px; width: 90px; margin: 0 4px; border: 1px solid #ccc; border-radius: 3px; }
+        button { padding: 6px 16px; border: none; background: #222; color: #fff; border-radius: 3px; cursor: pointer; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #eee; padding: 6px; text-align: left; font-size: 0.97em; }
+        th { background: #f0f0f0; }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h3>Tìm sản phẩm theo khoảng giá (DSL)</h3>
+    <form action="/product/search-dsl" method="post">
+        <input name="min" th:value="${min}" placeholder="Giá từ">
+        <input name="max" th:value="${max}" placeholder="Giá đến">
+        <button>Tìm</button>
+    </form>
+    <table th:if="${items != null}">
+        <tr><th>ID</th><th>Tên</th><th>Giá</th></tr>
+        <tr th:each="p : ${items}">
+            <td th:text="${p.id}"></td>
+            <td th:text="${p.name}"></td>
+            <td th:text="${p.price}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
